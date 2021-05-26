@@ -1,0 +1,195 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 1600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    background-color: #333;
+}
+.chart{
+    width: 600px;
+    height: 300px;
+    display: block;
+}
+.numbers{
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 100%;
+    display: inline-block;
+    float: left;
+}
+.numbers li{
+    list-style: none;
+    height: 150px;
+    position: relative;
+    bottom: 145px;
+}
+.numbers span{
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+.bars{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    background: #555;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 500px;
+    height: 300px;
+    box-shadow: 0 0 10px 0 #555;
+    border-radius: 5px;
+}
+.bars li{
+    display: table-cell;
+    width: 100px;
+    height: 300px;
+    position: relative;
+}
+.bars span{
+    width: 100%;
+    position: absolute;
+    bottom: -30px;
+    text-align: center;
+}
+.bars .bar{
+    display: block;
+    background: #17C0EB;
+    width: 50px;
+    
+    position: absolute;
+    bottom: 0;
+    margin-left: 25px;
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba(23, 192, 235, 0.5);
+    transition: 0.5s;
+    transition-property: background, box-shadow;
+}
+.bars .bar:hover{
+    background: #55EFC4;
+    box-shadow: 0 0 10px 0 rgba(85, 239, 196, 0.5);
+    cursor: pointer;
+}
+.bars .bar:before{
+    color: #fff;
+    content: attr(data-percentage) '%';
+    position: relative;
+    bottom: 20px;
+}
+.hp{
+    font-size: large;
+    font-family: "Roboto", sans-serif;
+    color: #17C0EB;
+    text-shadow: 0 0 10px 0 rgba(23, 192, 235, 0.5));
+    position: relative;
+    bottom: 15px;
+    left: 150px;
+}
+.hp:hover{
+    color: #55EFC4;
+    text-shadow: 0 0 10px 0 rgba(85, 239, 196, 0.5);
+    transition: 0.5s;
+    transition-property: text-shadow;
+}
+
+.MyCo{
+    font-size: large;
+    font-family: "Roboto", sans-serif;
+    color: #17C0EB;
+    text-shadow: 0 0 10px 0 rgb(23, 192, 235, 0.5);
+    position: relative;
+    bottom: 200px;
+    left: 10px;
+}
+.MyCo:hover{
+    color: #55EFC4;
+    text-shadow: 0 0 10px 0 rgba(85, 239, 196, 0.5);
+    transition: 0.5s;
+    transition-property: text-shadow;
+}
+.task{
+    font-size: large;
+    font-family: "Roboto", sans-serif;
+    color: #17C0EB;
+    text-shadow: 0 0 10px 0 rgb(23, 192, 235, 0.5);
+    position: relative;
+    bottom: 25px;
+    left: -500px;
+}
+.task:hover{
+    color: #55EFC4;
+    text-shadow: 0 0 10px 0 rgba(85, 239, 196, 0.5);
+    transition: 0.5s;
+    transition-property: text-shadow;
+}
+.Ul{
+    font-size: large;
+    font-family: "Roboto", sans-serif;
+    color: #17C0EB;
+    text-shadow: 0 0 10px 0 rgb(23, 192, 235, 0.5);
+    position: relative;
+    bottom: -175px;
+    left: 400px;
+}
+.Ul:hover{
+    color: #55EFC4;
+    text-shadow: 0 0 10px 0 rgba(85, 239, 196, 0.5);
+    transition: 0.5s;
+    transition-property: text-shadow;
+}
+.Champ{
+    font-size: xx-large;
+    font-family: "Roboto", sans-serif;
+    color: #17C0EB;
+    text-shadow: 0 0 10px 0 rgb(23, 192, 235, 0.5);
+    position: relative;
+    bottom: 00px;
+    left: -150px;
+}
+.Champ:hover{
+    color: #55EFC4;
+    text-shadow: 0 0 10px 0 rgba(85, 239, 196, 0.5);
+    transition: 0.5s;
+    transition-property: text-shadow;
+}
+.Shibdash{
+    font-size: xx-large;
+    font-family: "Roboto", sans-serif;
+    color: #17C0EB;
+    text-shadow: 0 0 10px 0 rgb(23, 192, 235, 0.5);
+    position: relative;
+    bottom: 700px;
+    left: 350px;
+}
+.Shibdash:hover{
+    color: #55EFC4;
+    text-shadow: 0 0 10px 0 rgba(85, 239, 196, 0.5);
+    transition: 0.5s;
+    transition-property: text-shadow;
+}
+a{
+    font-size: large;
+    font-family: "Roboto", sans-serif;
+    color: #17C0EB;
+    text-shadow: 0 0 10px 0 rgb(23, 192, 235, 0.5);
+    position: relative;
+    bottom: 750px;
+    left: -125px;
+}
+a:hover{
+    color: #55EFC4;
+    text-shadow: 0 0 10px 0 rgba(85, 239, 196, 0.5);
+    transition: 0.5s;
+    transition-property: text-shadow;
+}
+.item{
+    display: inline;
+}
