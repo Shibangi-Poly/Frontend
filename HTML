@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Cube</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="UTF-8"></script>
+    
+
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <ul class="items">
+                <li class="item"><a href="/Home">Home</a></li>
+                <li class="item"><a href="/Dashboard">Dashboard</a></li>
+                <li class="item"><a href="/My Enrollment">My Enrollment</a></li>
+                <li class="item"><a href="/Achievements">Achievements</a></li>
+                <li class="item"><a href="/Forum">Forum</a></li>
+            </ul>
+        </div>
+        <div class="Shibdash">
+            Shibangi's Dashboard
+        </div>
+    </header>
+    <main>
+        <div class="Champ">
+            <h1>Hi Champion!</h1>
+        </div>
+        <div class="Ul">
+            <h2>Upcoming lessons</h2>
+            <h3>Algebra</h3>
+            <h3>Russian Revolution</h3>
+            <h3>Newton's Laws of Motion</h3>
+        </div>
+        <div class="task">
+            <h2>Tasks</h2>
+            <h3>Completion of all homework</h3>
+            <h3>Attend upcoming classes</h3>
+            <h3>Learn Time Management</h3>
+        </div>
+        <div class="MyCo">
+            <h2>My Courses</h2>
+            <h3>Mathematics</h3>
+            <h3>English</h3>
+            <h3>Science</h3>
+            <h3>Social Science</h3>
+            <h3>Hindi</h3>
+        </div>
+        
+        <div class="hp">
+            <h2>Homework progress</h2>
+        </div>   
+            <div
+                class="chart">
+                <ul
+                    class="numbers">
+                    <li><span>100%</span></li>
+                    <li><span>50%</span></li>
+                    <li><span>0%</span></li>
+                </ul>
+                <ul class="bars">
+                    <li><div class="bar" data-percentage="50"></div><span>Mathematics</span></li>
+                    <li><div class="bar" data-percentage="30"></div><span>English</span></li>
+                    <li><div class="bar" data-percentage="60"></div><span>Science</span></li>
+                    <li><div class="bar" data-percentage="100"></div><span>Social Science</span></li>
+                    <li><div class="bar" data-percentage="80"></div><span>Hindi</span></li>
+                </ul>
+            </div>
+            <script type="text/javascript">
+            $(function(){
+                $('.bars li .bar').each(function(key, bar){
+                    var percentage = $(this).data('percentage');
+                    $(this).animate({
+                        'height': percentage + '%'
+                    },1000);
+                });
+            });
+            </script>
+        </div>
+    </main>
+   
+</body>
+</html>
